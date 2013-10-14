@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Characters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	    <!-- My own css file -->
+	<link rel="stylesheet" href="col.css">
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+	<div class="container">
+		<div class="row">
+			<h3> Characters:</h3> <p class="text-info"> Please choose any character from below to modify</p> 
+			  <div class="col-md-1"><button type="button" class="btn btn-info">Help!</button></div>
+			  <div class="col-md-3"><button type="button" class="btn  btn-lg btn-block btn-success"> + Create New Character</button></div>
+		</div>
+		
+		<div class="row">
+			  <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img data-src="holder.js/300x200" alt="Character">
+				  <div class="caption">
+					<h3>Bran Stark</h3>
+					<p><strong>Skills:</strong> Magic ability to enter the minds of animals, and people</p>
+					<p><strong>Source of Power:</strong> Army of wild animals</p>
+					<p><strong>Overall Strength:</strong> 8/10</p>
+					<p><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></p>
+				  </div>
+				</div>
+			  </div>
+			   <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img data-src="holder.js/300x200" alt="Character">
+				  <div class="caption">
+					<h3>Tyrion Lannister</h3>
+					<p><strong>Skills:</strong> high intelligence, to manipulate any situation</p>
+					<p><strong>Source of Power:</strong> Possess the Thrown, with well equipped army</p>
+					<p><strong>Overall Strength:</strong> 9/10</p>
+					<p><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></p>
+				  </div>
+				</div>
+			  </div>
+			   <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img data-src="holder.js/300x200" alt="Character">
+				  <div class="caption">
+					<h3>Stannis Baratheon</h3>
+					<p><strong>Skills:</strong> Uses magic to deceive, and fight</p>
+					<p><strong>Source of Power:</strong> Fire, and sea ships </p>
+					<p><strong>Overall Strength:</strong> 9/10</p>
+					<p><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></p>
+				  </div>
+				</div>
+			  </div>
+			   <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img data-src="holder.js/300x200" alt="Character">
+				  <div class="caption">
+					<h3>Jon Snow</h3>
+					<p><strong>Skills:</strong> Speed, bravery, and sord usage</p>
+					<p><strong>Source of Power:</strong> night-vision, and variety of weapons</p>
+					<p><strong>Overall Strength:</strong> 7/10</p>
+					<p><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></p>
+				  </div>
+				</div>
+			  </div>
+			   <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img data-src="holder.js/300x200" alt="Character">
+				  <div class="caption">
+					<h3>Daenerys Targaryen</h3>
+					<p><strong>Skills:</strong> Communicating with dragons</p>
+					<p><strong>Source of Power:</strong> Dragons</p>
+					<p><strong>Overall Strength:</strong> 9/10</p>
+					<p><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
