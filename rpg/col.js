@@ -7,5 +7,4 @@ $(function () {
         // Now we dismiss the dialog.
         $('#deleteModal').modal('hide');
     });
-
 });

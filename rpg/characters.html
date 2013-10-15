@@ -11,10 +11,16 @@
   </head>
   <body>
 	<div class="container">
+	
+			<div class="row">
+				<a href ="index.html"><<---Previous page</a>
+			</div>
+
 		<div class="row">
 			<h3> Characters:</h3> <p class="text-info"> Please choose any character from below to modify</p> 
 			  <div class="col-md-1"><button type="button" class="btn btn-info">Help!</button></div>
-			  <div class="col-md-3"><button type="button" class="btn  btn-lg btn-block btn-success"> + Create New Character</button></div>
+			  					  <!-- Button trigger modal -->
+			  <div class="col-md-3"><button data-toggle="modal" href="#createModel" type="button" class="btn  btn-lg btn-block btn-success"> + Create New Character</button></div>
 		</div>
 		
 		<div class="row">
@@ -89,10 +95,28 @@
 				  </div>
 				</div>
 			  </div>
+			  
+				<div class="col-md-4">
+					<p></p>
+					<p><strong>Please choose one of the available characters to play.</strong></p>
+					<select multiple="" class="form-control">
+            		<option>Bran Stark</option>
+            			<option>Tyrion Lannister</option>
+            			<option>Stannis Baratheon</option>
+            			<option>Jon Snow</option>
+            		<option>Daenerys Targaryen</option>
+          			</select>
+          			<p></p>
+          			    <button type="button" class="btn btn-primary">Select</button>
+         		</div>
+				<div class="col-md-4">
+					
+				</div>				
 			</div>
 		</div>
 	</div>	
-					<!-- Modal -->
+	
+					<!-- Modal for deletion-->
 	  <div class="modal fade" id="deleteModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		  <div class="modal-content">
@@ -103,7 +127,6 @@
 			<div class="modal-body">
 			   <strong> Deleting a character will remove all the information related to it. For more info please click on
 			  <button type="button" class="btn btn-info btn-sm">Help!</button>
-
 			</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -112,6 +135,51 @@
 		  </div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	  </div><!-- /.modal -->
+	  
+	  					<!-- Modal for creating new char-->
+	  <div class="modal fade" id="createModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			  <h4 class="modal-title">Create a new character</h4>
+			</div>
+			<div class="modal-body">
+				  <p>Please select the desired character to create.</p>
+				<div class="modal-body">
+				  <select class="form-control">
+					<option>Fighter</option>
+					<option>Wizard</option>
+					<option>Thief</option>
+					<option>Ranger</option>
+					<option>Demon</option>
+				  </select>
+				  <p>Please fill in the information.</p>
+					<div class="input-group input-group-sm">
+					  <span class="input-group-addon">The Skills, or abilities</span>
+					  <input type="text" class="form-control input-lg" placeholder="Seprate info by comma">
+					</div>	
+					<div class="input-group input-group-sm">
+					  <span class="input-group-addon">Source of Power (items)</span>
+					  <input type="text" class="form-control" placeholder="Seprate info by comma">
+					</div>
+					<div class="input-group input-group-sm">
+					  <span class="input-group-addon">The Overall Strength</span>
+					  <input type="text" class="form-control" placeholder="Seprate info by comma">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			  <button type="button" class="btn btn-success">Add Character</button>
+			  <button type="button" class="btn btn-info btn-sm">Help!</button>
+			</div>
+		  </div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+	  
+	  
+	  
 	  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.js"></script>

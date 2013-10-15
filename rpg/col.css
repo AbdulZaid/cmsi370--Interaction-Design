@@ -57,10 +57,21 @@
 	.col-md-1 {
 		float: right;
 	}
-		.col-md-2 {
+	.col-md-2 {
 		float: left;
+	}
+	.col-md-4 {
+		margin: 50px;
+		margin-bottom: 30px;
+		float: right;
 	}
 	.btn-danger {
 		margin-left: 5px;
+	}
+	.element.style {
+		float: left;
+	}
+	.btn-sm, .btn-xs {
+		float: left;
 	}
 </style>
