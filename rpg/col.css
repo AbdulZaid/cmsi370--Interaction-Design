@@ -74,4 +74,12 @@
 	.btn-sm, .btn-xs {
 		float: left;
 	}
+	#HelpButton {
+		float: left;
+
+	}
+	#Select {
+		float: right;
+
+	}
 </style>
