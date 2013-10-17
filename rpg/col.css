@@ -33,6 +33,7 @@
     font-size: 12px;
     line-height: 175%;
     color: #333;
+    background-color: rgb(255, 247, 203);
   }
   .text-muted {
     color: rgb(185, 0, 0);
@@ -91,7 +92,17 @@
 	#delete-button {
 		float: right;
 		}
-	.form-control {
-		
+	 #character {
+		*background: url(http://i41.tinypic.com/iqycr6.jpg);
+		background-repeat:no-repeat;
+		background-position:top;
+	}	
+	#indexBack {
+		background: url(http://cache.io9.com/assets/images/8/2011/03/634424_ep_101_kingslanding.jpg);
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	.firstText {
+	
 	}
 </style>
