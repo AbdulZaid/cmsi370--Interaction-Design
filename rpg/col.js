@@ -76,6 +76,13 @@ $(function() {
 			}
 		); 
 		
+		$(function () { 
+			$("#confirmDelete").click(function() {
+				console.log("bitch it's been clicked");
+				//dismissing the modal
+				$('#deleteModel').modal('hide')
+			});
+		});
 			$.getJSON(
 			"http://lmu-diabolical.appspot.com/characters",
 			function (charactersList) {
@@ -88,4 +95,3 @@ $(function() {
 				});
 			}
 		); 
-
