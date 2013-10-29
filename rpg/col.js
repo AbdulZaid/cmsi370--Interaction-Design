@@ -23,11 +23,12 @@ $(function () {
         '</tr>';
         */
 
-var characterRowTemplate = '<div class="col-sm-6 col-md-3">' +
+var characterRowTemplate = 
+	'<div class="col-sm-6 col-md-3">' +
     '<div class="thumbnail">' +
     '<img data-src="holder.js/300x200" alt="Character">' +
     '<div class="caption">' +
-    '<h3></h3>' +
+    '<h3 id = "idOfCharToChange"></h3>' +
     '<p id = "idOfChar" ><strong>ID: </strong><em></em></p>' +
     '<p id = "classOfChar" ><strong>Class: </strong><em></em></p>' +
     '<p id = "Gender"><strong>Gender: </strong><em></em></p>' +
@@ -37,19 +38,6 @@ var characterRowTemplate = '<div class="col-sm-6 col-md-3">' +
     '<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>' +
     '</p>' +
     '</div>' +
-    '</div>' +
-    '</div>' +
-    '</div>';
-
-
-var characterRowTemplate2 = '<div class="col-md-4">' +
-    '<p></p>' +
-    '<p><strong>Please choose one of the available characters to play.</strong></p>' +
-    '<select multiple="" class="form-control id ="selector" ">' +
-    '<option></option>' +
-    '</select>' +
-    '<p></p>' +
-    '<button id="Select" type="button" class="btn btn-primary">Select</button>' +
     '</div>' +
     '</div>' +
     '</div>';
@@ -79,32 +67,46 @@ function (characters) {
         $("#character-table").append($characterRow);
     });
 });
+
+
+
+var characterRowTemplate2 = 
+            '<div class="col-md-4">'+
+                '<p></p>'+
+                '<p><strong>Please choose one of the available characters to play.</strong></p>'+
+                '<select multiple="" id = "scroll" class="form-control">'+
+                    	'<option id = "charName"></option>'+
+                        '</select>'+
+                        '<p></p>'+
+          			    '<button id="Select" type="button" class="btn btn-primary">Select</button>'+
+            '</div>';
+
+
 $.getJSON(
     "http://lmu-diabolical.appspot.com/characters",
-
-function (charactersList) {
+function (characters) {
     // Do something with the character list.
     var $characterRow1 = $(characterRowTemplate2);
-    charactersList.forEach(function (character) {
-        $characterRow1.find("option")
+    characters.forEach(function (character) {
+        $characterRow1.find("#scroll > #charName")
             .text(character.name);
-        $("#character-table").append($characterRow1);
+        $("#character-scroll").append($characterRow1);
     });
 });
 
 $(function () {
-    $.getJSON(
-        "http://lmu-diabolical.appspot.com/characters",
-
+/*    $.getJSON(
     function (characters) {
         characters.forEach(function (character) {
             var $characterRow = $(characterRowTemplate);
             console.log("that's your ID#" + character.id);
         });
-    });
-
+    });*/
+    "http://lmu-diabolical.appspot.com/characters",
     $("#confirmDelete").click(function () {
-        var idToChange = $("#idOfChar > em").text();
+    	 var $characterRow3 = $(characterRowTemplate);
+    
+        var idToChange =$("#idOfCharToChange").attr('title');
         console.log("thisss " + idToChange);
         $.ajax({
             type: 'DELETE',
