@@ -5,42 +5,42 @@ The style file: alpha.bst
 Database file #1: Mental-Model-Paper.bib
 You've used 1 entry,
             2543 wiz_defined-function locations,
-            564 strings with 4560 characters,
-and the built_in function-call counts, 384 in all, are:
-= -- 38
+            562 strings with 4608 characters,
+and the built_in function-call counts, 287 in all, are:
+= -- 24
 > -- 8
 < -- 1
-+ -- 3
++ -- 2
 - -- 2
-* -- 29
-:= -- 68
+* -- 12
+:= -- 52
 add.period$ -- 3
 call.type$ -- 1
 change.case$ -- 5
 chr.to.int$ -- 1
 cite$ -- 1
-duplicate$ -- 15
-empty$ -- 31
+duplicate$ -- 11
+empty$ -- 26
 format.name$ -- 4
-if$ -- 74
+if$ -- 57
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
+missing$ -- 0
 newline$ -- 8
 num.names$ -- 3
-pop$ -- 3
+pop$ -- 14
 preamble$ -- 1
 purify$ -- 6
 quote$ -- 0
-skip$ -- 12
+skip$ -- 9
 stack$ -- 0
-substring$ -- 33
+substring$ -- 7
 swap$ -- 1
 text.length$ -- 1
 text.prefix$ -- 1
 top$ -- 0
 type$ -- 8
 warning$ -- 0
-while$ -- 4
+while$ -- 2
 width$ -- 2
-write$ -- 15
+write$ -- 13
