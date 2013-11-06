@@ -23,4 +23,15 @@ Cory Janssen.
 \newblock \url { http://www.techopedia.com/definition/29212/second-screen}
   (last accessed on 04/11/2013).
 
+\bibitem[SM]{Guideline}
+Sidney~L. Smith and Jane~N. Mosier.
+\newblock Guidelines for designing user interface software.
+\newblock \url { http://hcibib.org/sam/2.html} (last accessed on 05/11/2013).
+
+\bibitem[Wik]{guidline2}
+Wikipedia.
+\newblock Data consistency.
+\newblock \url { http://en.wikipedia.org/wiki/Data_consistency} (last accessed
+  on 05/11/2013).
+
 \end{thebibliography}

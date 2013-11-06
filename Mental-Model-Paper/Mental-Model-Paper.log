@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 NOV 2013 21:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 NOV 2013 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -221,25 +221,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4] [5]
-(./Mental-Model-Paper.bbl [6]) [7] (./Mental-Model-Paper.aux) ) 
+[6] (./Mental-Model-Paper.bbl [7]) [8] (./Mental-Model-Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2383 strings out of 493315
- 33609 string characters out of 6137904
- 95059 words of memory out of 5000000
- 5806 multiletter control sequences out of 15000+600000
+ 2385 strings out of 493315
+ 33631 string characters out of 6137904
+ 95068 words of memory out of 5000000
+ 5808 multiletter control sequences out of 15000+600000
  12612 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,6n,26p,984b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Mental-Model-Paper.pdf (7 pages, 70542 bytes).
+</usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Mental-Model-Paper.pdf (8 pages, 74116 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
