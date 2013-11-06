@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Mental-Model-Paper.aux
 The style file: alpha.bst
 Database file #1: Mental-Model-Paper.bib
-You've used 3 entries,
+You've used 4 entries,
             2543 wiz_defined-function locations,
-            572 strings with 4995 characters,
-and the built_in function-call counts, 802 in all, are:
-= -- 72
-> -- 24
-< -- 3
-+ -- 6
-- -- 6
-* -- 35
-:= -- 138
-add.period$ -- 8
-call.type$ -- 3
-change.case$ -- 15
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 36
-empty$ -- 71
-format.name$ -- 11
-if$ -- 162
+            577 strings with 5099 characters,
+and the built_in function-call counts, 1063 in all, are:
+= -- 96
+> -- 32
+< -- 4
++ -- 8
+- -- 8
+* -- 45
+:= -- 178
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 20
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 47
+empty$ -- 96
+format.name$ -- 15
+if$ -- 217
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 1
-newline$ -- 17
-num.names$ -- 9
-pop$ -- 29
+newline$ -- 22
+num.names$ -- 12
+pop$ -- 43
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 24
 quote$ -- 0
-skip$ -- 32
+skip$ -- 40
 stack$ -- 0
-substring$ -- 21
-swap$ -- 3
-text.length$ -- 3
-text.prefix$ -- 2
+substring$ -- 28
+swap$ -- 4
+text.length$ -- 4
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 24
+type$ -- 32
 warning$ -- 0
-while$ -- 6
-width$ -- 5
-write$ -- 34
+while$ -- 8
+width$ -- 6
+write$ -- 45
