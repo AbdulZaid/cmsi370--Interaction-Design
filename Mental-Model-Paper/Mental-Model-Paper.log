@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 NOV 2013 20:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 NOV 2013 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -214,11 +214,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./Mental-Model-Paper.bbl [1
+) [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2] (.
-/Mental-Model-Paper.aux) ) 
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./Mental-Model-Paper.bbl) [2] (./Mental-Model-Paper.aux) ) 
 Here is how much of TeX's memory you used:
  2348 strings out of 493315
  32988 string characters out of 6137904
@@ -226,14 +225,14 @@ Here is how much of TeX's memory you used:
  5775 multiletter control sequences out of 15000+600000
  12612 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,6n,26p,561b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt12.pfb>
-Output written on Mental-Model-Paper.pdf (2 pages, 60937 bytes).
+ 37i,6n,26p,662b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Mental-Model-Paper.pdf (2 pages, 62151 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
