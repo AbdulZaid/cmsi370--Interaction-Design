@@ -32,6 +32,25 @@
                                              left: touch.pageX - touch.target.deltaX,
                                              top: touch.pageY - touch.target.deltaY
                                              });
+               
+               //Delete Box
+               if(!((touch.target.movingBox).hasClass("delete-box")) &&
+                  (touch.pageX - touch.target.deltaX > 512 ||
+                   touch.pageY - touch.target.deltaY > 512 ||
+                   touch.pageX - touch.target.deltaX < 0 ||
+                   touch.pageY - touch.target.deltaY < 0))
+               {
+               (touch.target.movingBox).addClass("delete-box delete-highlight");
+               }
+               if(((touch.target.movingBox).hasClass("delete-box")) &&
+                  (touch.pageX - touch.target.deltaX < 512 &&
+                   touch.pageY - touch.target.deltaY < 512 &&
+                   touch.pageX - touch.target.deltaX > 0 &&
+                   touch.pageY - touch.target.deltaY > 0))
+               {
+               (touch.target.movingBox).removeClass("delete-box delete-highlight");
+               }
+               
                }
                });
         
@@ -49,6 +68,7 @@
                // touch.target.movingBox.
                touch.target.movingBox = null;
                }
+               
                });
     },
         
@@ -56,6 +76,11 @@
          * Indicates that an element is unhighlighted.
          */
     unhighlight: function () {
+        $(this).removeClass("box-highlight");
+        
+        if ($(this).hasClass("delete-box")) {
+            $(this).remove();
+        }
         $(this).removeClass("box-highlight");
     },
         
