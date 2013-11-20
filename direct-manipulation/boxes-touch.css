@@ -12,13 +12,17 @@
 }
 
 .box-highlight {
-    box-shadow: 0px 0px 6px #88F;
-    -moz-box-shadow: 0px 0px 6px #88F;
-    -webkit-box-shadow: 0px 0px 6px #88F;
+    box-shadow: 0px 0px 55px #88F;
+    -moz-box-shadow: 0px 0px 55px #88F;
+    -webkit-box-shadow: 0px 0px 55px #88F;
+}
+.delete-highlight {
+	box-shadow: 0px 0px 55px ##FF0000;
+	-moz-box-shadow: 0px 0px 55px ##FF0000;
+	-webkit-box-shadow: 0px 0px 55px ##FF0000;
 }
 
-.box-deletion-highlight {
-    box-shadow: 0px 0px 6px #FF0000;
-    -moz-box-shadow: 0px 0px 6px #FF0000;
-    -webkit-box-shadow: 0px 0px 6px #FF0000;
+.delete-box {
+	border: red;
+	position: absolute;
 }
