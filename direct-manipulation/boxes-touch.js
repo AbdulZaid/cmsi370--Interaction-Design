@@ -12,6 +12,8 @@
         .each(function (index, element) {
               element.addEventListener("touchmove", BoxesTouch.trackDrag, false);
               element.addEventListener("touchend", BoxesTouch.endDrag, false);
+              element.addEventListener("touchstart", BoxesTouch.startCreate, false);
+
               })
         
         .find("div.box").each(function (index, element) {
@@ -57,6 +59,33 @@
         // Don't do any touch scrolling.
         event.preventDefault();
     },
+        
+        /**
+         * Starts box creation
+         */
+        
+	startCreate: function (event) {
+		$.each(event.changedTouches, function (index, touch) {
+               touch.target.initialX = touch.pageX;
+               touch.target.initialY = touch.pageY;
+               
+               //Create new box
+               var newtemp = '<div class="box" style="width: 0px; height: 0px; left:' + touch.pageX + 'px; top: ' + touch.pageY + 'px">' +
+               '</div>';6
+               var newbox = newtemp;
+               $("#drawing-area").append(newbox);
+               (touch.target.creatingbox) = $("div div:last-child");
+               (touch.target.creatingbox).addClass("create-highlight");
+               $("#drawing-area").find("div.box").each(function (index, element) {
+                                                       element.addEventListener("touchstart", BoxesTouch.startMove, false);
+                                                       element.addEventListener("touchend", BoxesTouch.unhighlight, false);
+                                                       });
+               
+               });
+		//Eat up the event so that the drawing area does not
+		//deal with it.
+		event.stopPropagation();
+	},
         
         /**
          * Concludes a drawing or moving sequence.
