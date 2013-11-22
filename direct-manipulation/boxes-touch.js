@@ -54,6 +54,37 @@
                }
                
                }
+               
+               //Create Box
+               if (touch.target.creationbox) {
+               if(touch.pageX < touch.target.initialX) {
+               touch.target.creatingbox.offset({
+                                               left: touch.pageX,
+                                               });
+               touch.target.creatingbox.width(touch.target.initialX - touch.pageX);
+               } else {
+               touch.target.creatingbox.offset ({
+                                                left: touch.target.initialX,
+                                                });
+               touch.target.creatingbox.width(touch.pageX - touch.target.initialX);
+               }
+               
+               if(touch.pageY < touch.target.initialY) {
+               touch.target.creatingbox.offset({
+                                               top: touch.pageY,
+                                               });
+               touch.target.creatingbox.height(touch.target.initialY - touch.pageY);
+               } else {
+               touch.target.creatingbox.offset ({
+                                                top: touch.target.initialY,
+                                                });
+               touch.target.creatingbox.height(touch.pageY - touch.target.initialY);
+               
+               }
+               
+               }
+               
+               
                });
         
         // Don't do any touch scrolling.
@@ -97,7 +128,11 @@
                // touch.target.movingBox.
                touch.target.movingBox = null;
                }
+               if(touch.target.creatingbox) {
+               touch.target.creatingbox.removeClass("create-highlight");
                
+               touch.target.creatingbox = null;
+               }
                });
     },
         
