@@ -2,7 +2,7 @@
 //     just once.  These are not technically wrong, but they lose
 //     the possibility of shared scope.
 $(function () {
-    $("#help-button").popover();
+    $("#help-button-editing").popover();
 });
 
 $(function () {
