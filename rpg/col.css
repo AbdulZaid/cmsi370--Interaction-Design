@@ -1,7 +1,6 @@
-<style> /* JD: You are in CSS, so you don't actually need the style tags. */
-  article, aside, figure, footer, header, hgroup, 
-  menu, nav, section { display: block; }
-  #modal {
+    article, aside, figure, footer, header, hgroup,
+    menu, nav, section { display: block; }
+    #modal {
     width: 600px;
     border: 1px solid #CCC;
     box-shadow: 0 1px 5px #CCC;
@@ -9,109 +8,104 @@
     font-family: verdana;
     margin: 25px auto;
     overflow: hidden;
-  }
-/* JD: For readability, I recommend inserting a blank line in between CSS blocks. */
-  #modal header {
-    background: #f1f1f1;
-    background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
-    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
-    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
-    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
-    box-shadow: 0 1px 2px #888;
-    padding: 10px;
-  }
-  #modal h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-weight: normal;
-    text-shadow: 0 1px 2px white;
-    color: #000;
-    text-align: center;
-  }
-  #modal section {
-    padding: 10px 30px; 
-    font-size: 12px;
-    line-height: 175%;
-    color: #333;
-    background-color: rgb(255, 247, 203);
-  }
-  .text-muted {
-    color: rgb(185, 0, 0);
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-style: italic;
-}
-	.thumbnail {
-	  margin: 5px;
-	  display: inline-block;
-	  display: block;
-	  height: auto;
-	  max-width: 100%;
-	  padding: 4px;
-	  line-height: 1.428571429;
-	  background-color: #D1D1D1;
-	  border: 2px solid black;
-	  border-radius: 4px;
-	  -webkit-transition: all .2s ease-in-out;
-	  transition: all .2s ease-in-out;
-	}
-/* JD: Interesting choice to override the Bootstrap column classes in this way.
-       In some cases, this is not necessary: for example, Bootstrap also
-       provides pull-right and pull-left classes that set the float accordingly?
-       That way, you would just have class="col-md-1 pull-right" and no additional
-       CSS would be needed. */
-	.col-md-1 {
-		float: right;
-	}
-	.col-md-2 {
-		float: left;
-	}
-	.col-md-4 {
-		margin: 50px;
-		margin-bottom: 30px;
-		float: right;
-	}
-	.btn-danger {
-		margin-left: 5px;
-	}
-	.element.style {
-		float: left;
-	}
-	.btn-sm, .btn-xs {
-		float: left;
-	}
-	#HelpButton {
-		float: left;
+    }
 
-	}
-	#Select {
-		float: right;
-	}
-	#randomSpawn {
-		float: right;
-		margin-bottom:2px;
-	}
-	.input-group {
-		margin-top: 2px;
-	}
-	#delete-button {
-		float: right;
-		}
-/* JD: Indents are broken here.  Below, you also sometimes miss adding a space
-       after the colon.  In the interest of readability, please keep an eye out
-       for that. */
-	 #character {
-		*background: url(http://i41.tinypic.com/iqycr6.jpg);
-		background-repeat:no-repeat;
-		background-position:top;
-	}	
-	#indexBack {
-		background: url(http://cache.io9.com/assets/images/8/2011/03/634424_ep_101_kingslanding.jpg);
-		background-repeat:no-repeat;
-		background-position:center;
-	}
-	.firstText {
-	
-	}
-</style>
+    #modal header {
+        background: #f1f1f1;
+        background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
+        background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+        background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+        background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+        box-shadow: 0 1px 2px #888;
+        padding: 10px;
+    }
+
+    #modal h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        text-shadow: 0 1px 2px white;
+        color: #000;
+        text-align: center;
+    }
+
+    #modal section {
+        padding: 10px 30px;
+        font-size: 12px;
+        line-height: 175%;
+        color: #333;
+        background-color: rgb(255, 247, 203);
+    }
+
+    .text-muted {
+        color: rgb(185, 0, 0);
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    .thumbnail {
+        margin: 5px;
+        display: inline-block;
+        display: block;
+        height: auto;
+        max-width: 100%;
+        padding: 4px;
+        line-height: 1.428571429;
+        background-color: #D1D1D1;
+        border: 2px solid black;
+        border-radius: 4px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    .col-md-1 {
+        float: right;
+    }
+    .col-md-2 {
+        float: left;
+    }
+    .col-md-4 {
+        margin: 50px;
+        margin-bottom: 30px;
+        float: right;
+    }
+    .btn-danger {
+        margin-left: 5px;
+    }
+    .element.style {
+        float: left;
+    }
+    .btn-sm, .btn-xs {
+        float: left;
+    }
+    #HelpButton {
+        float: left;
+    }
+    #Select {
+        float: right;
+    }
+    #randomSpawn {
+        float: right;
+        margin-bottom:2px;
+    }
+    .input-group {
+        margin-top: 2px;
+    }
+
+    #delete-button {
+        float: right;
+    }
+
+    #character {
+        *background: url(http://i41.tinypic.com/iqycr6.jpg);
+        background-repeat:no-repeat;
+        background-position:top;
+    }
+
+    #indexBack {
+        background: url(http://cache.io9.com/assets/images/8/2011/03/634424_ep_101_kingslanding.jpg);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
