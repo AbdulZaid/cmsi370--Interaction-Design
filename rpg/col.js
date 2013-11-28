@@ -3,33 +3,13 @@
 //     the possibility of shared scope.
 $(function () {
     $("#help-button-editing").popover();
-});
 
-$(function () {
     $("#help-button-CharAdding").popover();
-});
 
-$(function () {
     $("#help-button-Deletion").popover();
 });
 
 
-/* JD: Acccck, we are now outside of a $(function () { }); !!!
-       We shouldn't be. */
-
-/*  '<tr>' +
-          '<td><input type="checkbox" value="0"></td>' +
-          '<td><a href="character.html#11111"></a></td>' +
-          '<td></td>' +
-          '<td></td>' +
-          '<td></td>' +
-          '<td></td>' +
-        '</tr>';
-        */
-
-/* JD: This is nice; I like that you went for something distinct from a table
-       or list.  Note that you can indent the string parts for readability.
-       Plus, you should continue to format your HTML consistently here. */
 var characterRowTemplate = 
 	'<div class="col-sm-6 col-md-3">' +
     '<div class="thumbnail">' +
@@ -49,79 +29,82 @@ var characterRowTemplate =
     '</div>' +
     '</div>';
 
+
+
+
+var characterRowTemplate2 =
+    '<option id = "charName"></option>';
+
 $.getJSON(
     "http://lmu-diabolical.appspot.com/characters",
-    // JD: Indent this function.
-function (characters) {
-    // Do something with the character list.
-    characters.forEach(function (character) {
-        var $characterRow = $(characterRowTemplate);
-        $characterRow.find("h3")
-            .attr({
-            title: character.id
-        })
-            .text(character.name)
-        /* JD: Nicely done except...once you start cloning the template, you start
-               getting duplicate IDs, which is a no-no.  They only happen to work
-               here because you are using find, restricted to the newly-created
-               $characterRow.  But in general you shouldn't do this.  You can just
-               use additional classes, for example, to identify the different elements
-               that need to be customized. */
-        $characterRow.find("#idOfChar > em")
-            .text(character.id);
-        $characterRow.find("#classOfChar > em  ")
-            .text(character.classType);
-        $characterRow.find("#Gender > em")
-            .text(character.gender);
-        $characterRow.find("#Level > em")
-            .text(character.level);
-        $characterRow.find("#Money > em")
-            .text(character.money);
-        $("#character-table").append($characterRow);
-    });
-});
+    function (characters) {
+        // Do something with the character list.
+        characters.forEach(function (character) {
+            var $characterRow = $(characterRowTemplate);
+            $characterRow.find("h3")
+                .attr({
+                title: character.id
+            })
+                .text(character.name)
+            /* JD: Nicely done except...once you start cloning the template, you start
+                   getting duplicate IDs, which is a no-no.  They only happen to work
+                   here because you are using find, restricted to the newly-created
+                   $characterRow.  But in general you shouldn't do this.  You can just
+                   use additional classes, for example, to identify the different elements
+                   that need to be customized. */
+            $characterRow.find("#idOfChar > em")
+                .text(character.id);
+            $characterRow.find("#classOfChar > em  ")
+                .text(character.classType);
+            $characterRow.find("#Gender > em")
+                .text(character.gender);
+            $characterRow.find("#Level > em")
+                .text(character.level);
+            $characterRow.find("#Money > em")
+                .text(character.money);
+            $("#character-table").append($characterRow);
+        });
+        //
+          characters.forEach(function (character) {
+                var $characterRow1 = $(characterRowTemplate2);
+                $characterRow1.find("#scroll > #charName")
+                    .text(character.name);
+                $("#character-scroll > #scroll > #charName").append($characterRow1);
+        });
+          
+    }
+          
+);
 
-
-
-var characterRowTemplate2 = 
-            '<div class="col-md-4">'+
-                '<p></p>'+
-                '<p><strong>Please choose one of the available characters to play.</strong></p>'+
-                '<select multiple="" id = "scroll" class="form-control">'+
-                    	'<option id = "charName"></option>'+
-                        '</select>'+
-                        '<p></p>'+
-          			    '<button id="Select" type="button" class="btn btn-primary">Select</button>'+
-            '</div>';
 
 
 /* JD: This is a wasted JSON call---you already loaded the characters in the
        previous one!  I don't know why you did this separately.  You should
        consolidate this with the other function in order to save yourself
        an additional network round trip. */
-$.getJSON(
-    "http://lmu-diabolical.appspot.com/characters",
-function (characters) {
-    // Do something with the character list.
-    /* JD: I think, you are replicating the wrong template here.  The instructions
-           and select elements should be permanent, and single; it is only the
-           option elements that you are creating multiples of.  At least as far
-           as I can tell. */
-    // JD: This is why, in case you noticed, only the last character shows up.
-    //     Well, the other reason is that you never append $characterRow1 to
-    //     the page.  So anyway those are why this is not acting as you intended.
-    var $characterRow1 = $(characterRowTemplate2);
-    characters.forEach(function (character) {
-        $characterRow1.find("#scroll > #charName")
-            .text(character.name);
-        $("#character-scroll").append($characterRow1);
-    });
-
-    /* JD: In any case, I would question the design decision to include select
-           element.  You already have a player-by-player "card" showing their
-           information with Edit and Delete buttons.  Why not have a Select
-           button then, one per character? */
-});
+//$.getJSON(
+//          "http://lmu-diabolical.appspot.com/characters",
+//
+//function (characters) {
+//    // Do something with the character list.
+//    /* JD: I think, you are replicating the wrong template here.  The instructions
+//           and select elements should be permanent, and single; it is only the
+//           option elements that you are creating multiples of.  At least as far
+//           as I can tell. */
+//    // JD: This is why, in case you noticed, only the last character shows up.
+//    //     Well, the other reason is that you never append $characterRow1 to
+//    //     the page.  So anyway those are why this is not acting as you intended.
+//    var $characterRow1 = $(characterRowTemplate2);
+//    characters.forEach(function (character) {
+//        $characterRow1.find("#scroll > #charName")
+//            .text(character.name);
+//        $("#character-scroll").append($characterRow1);
+//    });
+//
+//    /* JD: In any case, I would question the design decision to include select
+//           element.  You already have a player-by-player "card" showing their
+//           information with Edit and Delete buttons.  Why not have a Select
+//           button then, one per character? */
 
 // JD: OK, the part below is REALLY broken.  It reveals some big gaps in
 //     your understanding.
