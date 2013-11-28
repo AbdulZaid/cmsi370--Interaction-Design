@@ -9,119 +9,38 @@
 	<link rel="stylesheet" href="col.css">
 
   </head>
-  <body id="character"> <!-- JD: Interesting that you felt you had to assign an id to the body element.
-                                 There is only one body after all, so technically no need for an ID.
-                                 This is not wrong; just unconventional. -->
+  <body id="character"> <!-- id is used for better self assistence -->
+      
 	<div class="container">
-	  <!-- JD: Indent size is off here.  Also, I spotted a tab at the beginning of this line. -->
-			<div class="row">
-				<a href ="index.html"><<---Previous page</a>
-			</div>
-
+        
+        <div class="row">
+            <a href ="index.html"><<---Previous page</a>
+        </div>
+        
 		<div class="row">
           <!-- JD: Keep your indent sizes consistent.  You were indenting 2 spaces at a time.
                    Below, you went to 4.  Further, for readability you should start the p element
                    on a new line. -->
-			<h3> Characters:</h3> <p id = "firstText" class="text-danger"><strong> Please choose any character from below to play with, or modify.</strong></p> 
-			  <div class="col-md-1">
-                <!-- JD: Another missed indent. -->
-                <!-- JD: You link to help.html here, but did not provide one.  Plus, why help-button*3*???
-                         Names of that form are highly discouraged. -->
-			  <a id="help-button3" href="help.html" class="btn btn-info" data-toggle="popover" title=""
-              data-content="To learn how to edit, or how to use this, please visit this page?" data-original-title="Assitance">
-                <!-- JD: Typo in data-original-title above!  But nice that you tried a popover. -->
-              Help!</a></div>
+			<h3> Characters:</h3>
+                <p id = "firstText" class="text-danger"><strong> Please choose any character from below to play with, or modify.</strong></p>
+                <div class="col-md-1">
+                <a id="help-button" href="help.html" class="btn btn-info" data-toggle="popover" title=""
+                    data-content="To learn how to edit, or how to use this, please visit this page?" data-original-title="Help">Help!</a>
+                </div>
+            
+        
 			  					  <!-- Button trigger modal -->
-              <!-- JD: Yes, you can definitely be more aggressive with line breaks. -->
-			  <div class="col-md-3"><button data-toggle="modal" href="#createModel" type="button" class="btn  btn-lg btn-block btn-success"> + Create New Character</button></div>
-		</div>
-		<div id="character-table" class="row">
-          <!-- JD: This old mockup code can simply be deleted.  You have version control anyway,
-                   so you can go back to it if needed. -->
-				<!---
-			  <div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img data-src="holder.js/300x200" alt="Character">
-				  <div class="caption">
-					<h3>Bran Stark</h3>
-					<p><strong>Skills:</strong> Magic ability to enter the minds of animals, and people</p>
-					<p><strong>Source of Power:</strong> Army of wild animals</p>
-					<p><strong>Overall Strength:</strong> 8/10</p>
-					<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>
-					<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			   <div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img data-src="holder.js/300x200" alt="Character">
-				  <div class="caption">
-					<h3>Tyrion Lannister</h3>
-					<p><strong>Skills:</strong> high intelligence, to manipulate any situation</p>
-					<p><strong>Source of Power:</strong> Possess the Thrown, with well equipped army</p>
-					<p><strong>Overall Strength:</strong> 9/10</p>
-					<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>
-					<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			   <div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img data-src="holder.js/300x200" alt="Character">
-				  <div class="caption">
-					<h3>Stannis Baratheon</h3>
-					<p><strong>Skills:</strong> Uses magic to deceive, and fight</p>
-					<p><strong>Source of Power:</strong> Fire, and sea ships </p>
-					<p><strong>Overall Strength:</strong> 9/10</p>
-					<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button> 
-					<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			   <div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img data-src="holder.js/300x200" alt="Character">
-				  <div class="caption">
-					<h3>Jon Snow</h3>
-					<p><strong>Skills:</strong> Speed, bravery, and sord usage</p>
-					<p><strong>Source of Power:</strong> night-vision, and variety of weapons</p>
-					<p><strong>Overall Strength:</strong> 7/10</p>
-					<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>
-					<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			 			</div>
-		</div>
-		-->		
-	</div>
-      <!-- JD: More indentation hiccups. -->
-	        <div id="character-scroll" class="row">
-              <!-- JD: More discardable code. -->
-	<!---
-            <div class="col-md-4">
-                <p></p>
-                <p><strong>Please choose one of the available characters to play.</strong></p>
-                <select multiple=""  id = "scroll" class="form-control">
-                    <option" >Bran Stark</option>
-            			<option>Tyrion Lannister</option>
-            			<option>Stannis Baratheon</option>
-            			<option>Jon Snow</option>
-            			<option>Daenerys Targaryen</option>
-                        </select>
-                        <p></p>
-          			    <button id="Select" type="button" class="btn btn-primary">Select</button>
-        	 </div>	
-	--->
-        	 </div>	
+            <div class="col-md-3"><button data-toggle="modal" href="#createModel" type="button" class="btn  btn-lg btn-block btn-success"> + Create New Character</button>
+            </div>
+		
+        </div>
+        
+		<div id="character-table" class="row"></div>
+        
+        <div id="character-scroll" class="row"></div>	
 
 					<!-- Modal for deletion-->
-	  <div class="modal fade" id="deleteModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <!-- JD: Note it is spelled "modal," not "model." -->
+	  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		  <div class="modal-content">
 			<div class="modal-header">
@@ -136,11 +55,8 @@
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 			  <button type="button" id = "confirmDelete" class="btn btn-danger">Confirm</button>
-              <!-- JD: The popover idea in itself is not bad, but the content you provide
-                       inside it is not really helpful.  And that numbered ID should also
-                       be changed. -->
-			  <a id="help-button2" href="#" class="btn btn-info btn-sm" data-toggle="popover" title=""
-              data-content="To learn how to edit, or how to use this, please visit this page" data-original-title="Assitance">
+			  <a id="help-button-Deletion" href="#" class="btn btn-info btn-sm" data-toggle="popover" title=""
+              data-content="To learn how to edit, or how to use this, please visit this page" data-original-title="Help">
               Help!</a>
 			</div>
 		  </div><!-- /.modal-content -->
@@ -158,8 +74,6 @@
 			<div class="modal-body">
 				  <p>Please select the desired family to create a new member.</p>
 				<div class="modal-body">
-                  <!-- JD: Bootstrap actually has some nice form-formatting elements and classes.
-                           You should scan that documentation for ideas. -->
 				  <select class="form-control">
 					<option>Stark</option>
 					<option>Lannister</option>
@@ -170,7 +84,6 @@
 				  <p></p>
 				  <p>Please fill in the information.</p>
 				  	<div class="input-group input-group-sm">
-                      <!-- JD: Nice that you explore these add-on classes. -->
 					  <span class="input-group-addon">Name</span>
 					  <input type="text" class="form-control input-lg" placeholder="Name of the character">
 					</div>	
@@ -202,8 +115,8 @@
               <!-- JD: So this Help button is clearly copied now.  If you do this, make sure
                        to customize the content in context.  Plus, the chosen ID is not a good
                        one.  Again. -->
-			  <a id="help-button1" href="#" class="btn btn-info btn-sm" data-toggle="popover" title=""
-              data-content="To learn how to edit, or how to use this, please visit this page" data-original-title="Assitance">
+			  <a id="help-button-CharAdding" href="#" class="btn btn-info btn-sm" data-toggle="popover" title=""
+              data-content="To learn how to create a character, please visit this page" data-original-title="Assitance">
               Help!</a>
 			</div>
 		  </div><!-- /.modal-content -->

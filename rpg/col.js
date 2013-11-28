@@ -6,11 +6,11 @@ $(function () {
 });
 
 $(function () {
-    $("#help-button1").popover();
+    $("#help-button-CharAdding").popover();
 });
 
 $(function () {
-    $("#help-button2").popover();
+    $("#help-button-Deletion").popover();
 });
 
 
@@ -42,7 +42,7 @@ var characterRowTemplate =
     '<p id = "Level"><strong>Level: </strong><em></em></p>' +
     '<p id = "Money"><strong>Money: </strong><em></em></p>' +
     '<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>' +
-    '<a id= "delete-button" data-toggle="modal" href="#deleteModel" class="btn btn-danger">Delete</a>' +
+    '<a id= "delete-button" data-toggle="modal" href="#deleteModal" class="btn btn-danger">Delete</a>' +
     '</p>' +
     '</div>' +
     '</div>' +
@@ -157,6 +157,6 @@ $(function () {
 
         console.log("Hey, it's been clicked");
         //dismissing the modal
-        $('#deleteModel').modal('hide') // JD: Missing semicolon.
+        $('#deleteModal').modal('hide') // JD: Missing semicolon.
     });
 });
