@@ -21,7 +21,8 @@ var characterRowTemplate =
     '<p id = "Gender"><strong>Gender: </strong><em></em></p>' +
     '<p id = "Level"><strong>Level: </strong><em></em></p>' +
     '<p id = "Money"><strong>Money: </strong><em></em></p>' +
-    '<p><button type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>' +
+    '<p><button id="editCard" type="button" data-toggle="modal" href="#editModal" class="btn btn-primary">Edit</button>' +
+    '<button id="Select" type="button" class="btn btn-success btn-sm">Select</button>'+
     '<a id= "delete-button" data-toggle="modal" href="#deleteModal" class="btn btn-danger">Delete</a>' +
     '</p>' +
     '</div>' +
@@ -32,8 +33,7 @@ var characterRowTemplate =
 
 
 
-var characterRowTemplate2 =
-    '<option id = "charName"></option>';
+    
 
 $.getJSON(
     "http://lmu-diabolical.appspot.com/characters",
@@ -44,7 +44,7 @@ $.getJSON(
             $characterRow.find("h3")
                 .attr({
                 title: character.id
-            })
+                })
                 .text(character.name)
             /* JD: Nicely done except...once you start cloning the template, you start
                    getting duplicate IDs, which is a no-no.  They only happen to work
@@ -54,7 +54,7 @@ $.getJSON(
                    that need to be customized. */
             $characterRow.find("#idOfChar > em")
                 .text(character.id);
-            $characterRow.find("#classOfChar > em  ")
+            $characterRow.find("#classOfChar > em")
                 .text(character.classType);
             $characterRow.find("#Gender > em")
                 .text(character.gender);
@@ -63,15 +63,8 @@ $.getJSON(
             $characterRow.find("#Money > em")
                 .text(character.money);
             $("#character-table").append($characterRow);
+
         });
-        //
-          characters.forEach(function (character) {
-                var $characterRow1 = $(characterRowTemplate2);
-                $characterRow1.find("#scroll > #charName")
-                    .text(character.name);
-                $("#character-scroll > #scroll > #charName").append($characterRow1);
-        });
-          
     }
           
 );

@@ -83,6 +83,9 @@
     #HelpButton {
         float: left;
     }
+    #editCard {
+        float: center;
+    }
     #Select {
         float: right;
     }
@@ -95,7 +98,8 @@
     }
 
     #delete-button {
-        float: right;
+        float: none;
+        margin-left: 52px;
     }
 
     #character {
