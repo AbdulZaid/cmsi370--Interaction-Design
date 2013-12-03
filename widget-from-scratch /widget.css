@@ -1,6 +1,45 @@
-#display {
-    width: 250px;
-    height: 250px;
+#header {
+    width: 100%;
+    height: 30%;
     border: 1px dashed grey;
+    background-color: #333;
+    box-shadow: 0px 4px 2px #333;
+}
 
+#header>h1 {
+    padding: 30;
+    width: 1024px;
+    margin: 0px auto;
+    color: white;
+    position: absolute;
+}
+body {
+    font-family:arial, sans.serif;
+    margin:0
+    background-color:#f2f2f2;
+}
+
+#container {
+    width: 1024px;
+    min-height: 500px;
+    margin: 0px auto;
+    margin-top:20px;
+    background-color:white;
+    border: 1px solid #333;
+
+}
+
+#controls {
+    width: 1024px;
+    margin:0px auto;
+}
+
+textarea {
+    resize:none;
+    width:940px;
+}
+
+#send{
+    font-size:24px;
+    position: absolute;
 }
