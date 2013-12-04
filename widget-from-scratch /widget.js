@@ -7,6 +7,8 @@ function username() {
 }
 
 $(function() {
+  
+
   username();
   //Send on "enter" click.
   $("#textbox").keypress(function(event) {
@@ -23,7 +25,7 @@ $(function() {
          }
       }
     });
-  
+
   //send when "send button" is clicked.
   $("#send").click(function(){
         var userName = "<span class = 'username' = >You: </span>";
@@ -33,17 +35,25 @@ $(function() {
         $("#container").html(currentText + "<br>" + userName +textValue);
         $("#textbox").val(" ");
         $("#container").scrollTop($("#container").prop("scrollHeight"));
-                   
         });
+  
+  
+  //the drag and drop function!!!!
+  $(document).ready(function() {
+        var stack = $("#container").html();
+        $(".boxed").draggable({helper: "clone"});
+        $("#textbox").droppable({
+            accept:".boxed",
+            drop: function(ev, ui) {
+            var droppedItem = $(ui.draggable).clone();
+            var currentDraggedValue = droppedItem.text();
+            $(this).html(currentDraggedValue);
+            
+            }
+            });
+        });
+
   });
 
-$(document).ready(function() {
-                  $(".boxed").draggable({helper: "clone"});
-                  $("#textbox").droppable({
-                        accept:".boxed",
-                        drop: function(ev, vi) {
-                            alert("dropped");
-                            }
-                    });
 
-        });
+
