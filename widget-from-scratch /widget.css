@@ -52,3 +52,16 @@ textarea {
     color: blue;
     font-weight: bold;
 }
+
+.boxed {
+    width: 35;
+    height: 20;
+    border: 1px solid green ;
+    background: greenyellow;
+    font-style: oblique;
+    color: brown;
+    text-align: -webkit-center;
+    position: relative;
+    left: 224px;
+    top: -21px;
+}

@@ -38,5 +38,12 @@ $(function() {
   });
 
 $(document).ready(function() {
-                  $("#send").draggable();
+                  $(".boxed").draggable({helper: "clone"});
+                  $("#textbox").droppable({
+                        accept:".boxed",
+                        drop: function(ev, vi) {
+                            alert("dropped");
+                            }
+                    });
+
         });
