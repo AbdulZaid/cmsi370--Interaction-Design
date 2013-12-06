@@ -1,4 +1,4 @@
-    var BoxesTouch = {
+    var BoxesTouch = { // JD: Why did this and the comment below it get indented?
         /**
          * Sets up the given jQuery collection as the drawing area(s).
          */
@@ -15,18 +15,20 @@
               element.addEventListener("touchstart", BoxesTouch.startCreate, false);
 
               })
-        
+        // JD: This too---this was already formatted just fine.  Why the change?
         .find("div.box").each(function (index, element) {
                               element.addEventListener("touchstart", BoxesTouch.startMove, false);
                               element.addEventListener("touchend", BoxesTouch.unhighlight, false);
                               });
     },
-        
+
+    // JD: Another unexplained indent shift.
         /**
          * Tracks a box as it is rubberbanded or moved across the drawing area.
          */
     trackDrag: function (event) {
         $.each(event.changedTouches, function (index, touch) {
+            // JD: And this initial if clause.  I don't get it.
                // Don't bother if we aren't tracking anything.
                if (touch.target.movingBox) {
                // Reposition the object.
@@ -36,12 +38,19 @@
                                              });
                
                //Delete Box
+            // JD: Functional, but with some drawing area hardcoding.
+            //     And you should add a space between your "if" token and
+            //     the parenthesized condition.
                if(!((touch.target.movingBox).hasClass("delete-box")) &&
                   (touch.pageX - touch.target.deltaX > 512 ||
                    touch.pageY - touch.target.deltaY > 512 ||
                    touch.pageX - touch.target.deltaX < 0 ||
                    touch.pageY - touch.target.deltaY < 0))
-               {
+               { // JD: Even with a multiline if condition I would stick the
+                 //     opening { on the prior line.  This lets your preserve
+                 //     the single-level indenting, although from the look it
+                 //     there is hardly any real indenting going on anyway.
+
                (touch.target.movingBox).addClass("delete-box delete-highlight");
                }
                if(((touch.target.movingBox).hasClass("delete-box")) &&
@@ -56,7 +65,23 @@
                }
                
                //Create Box
+            // JD: Watch your naming!!!  Look REALLY CAREFULLY at the line below,
+            //     and compare it to the rest of the code that refers to the box
+            //     being created.
                if (touch.target.creationbox) {
+                // JD: Next, recall that the touch target here is the *drawing area*, not
+                //     the individual boxes.  Thus, you need a different scheme for tracking
+                //     the box that is being created because there can be more than one
+                //     such box.  Hint: All touch objects have a guaranteed-unique and
+                //     stable identifier.
+                //
+                //     Also, I don't know what convention/rules you are using for formatting
+                //     your code but it is waaaaaaaaaaaay off.  It does not reflect the
+                //     semantic structure of the code, spacing choices seem arbitrary,
+                //     and it reall gets in the way of understanding your code.  And it
+                //     isn't a tabs vs. spaces thing either---as far as I can tell, you
+                //     do use all spaces for formatting.  Which tells me that your choices
+                //     here are deliberate.  But admittedly they are way off target.
                if(touch.pageX < touch.target.initialX) {
                touch.target.creatingbox.offset({
                                                left: touch.pageX,
@@ -101,13 +126,35 @@
                touch.target.initialY = touch.pageY;
                
                //Create new box
+            // JD: Alternatively, you can define this "template" as a standalone
+            //     string at the top, then set its attributes via jQuery, e.g.:
+            //
+            //     ...
+            //     TEMP_BOX_TEMPLATE: '<div class="box"></div>';
+            //
+            //     ...
+            //
+            //     var tempBox = $(BoxesTouch.TEMP_BOX_TEMPLATE).css({
+            //         width: "0px",
+            //         height: "0px",
+            //         left: touch.pageX + "px",
+            //         top: touch.pageY + "px"
+            //     });
+            //
+            //     ...
+            //
+            //     You may find this approach to be a little more readable and
+            //     less error-prone.
+            //
                var newtemp = '<div class="box" style="width: 0px; height: 0px; left:' + touch.pageX + 'px; top: ' + touch.pageY + 'px">' +
-               '</div>';6
+               '</div>';6 // JD: What is this number 6 doing here?  Sloppy.
                var newbox = newtemp;
                $("#drawing-area").append(newbox);
                (touch.target.creatingbox) = $("div div:last-child");
                (touch.target.creatingbox).addClass("create-highlight");
                $("#drawing-area").find("div.box").each(function (index, element) {
+                    // JD: I mean, look at these lines.  They are waaaaaay too far
+                    //     in.  Doesn't that just look visually wrong to you?
                                                        element.addEventListener("touchstart", BoxesTouch.startMove, false);
                                                        element.addEventListener("touchend", BoxesTouch.unhighlight, false);
                                                        });
@@ -145,6 +192,7 @@
         if ($(this).hasClass("delete-box")) {
             $(this).remove();
         }
+        // JD: Why is this here?  Copy-paste artifact...?
         $(this).removeClass("box-highlight");
     },
         
