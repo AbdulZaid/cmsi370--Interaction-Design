@@ -134,7 +134,7 @@
             //
             //     ...
             //
-            //     var tempBox = $(BoxesTouch.TEMP_BOX_TEMPLATE).css({
+            //     var newtemp = $(BoxesTouch.TEMP_BOX_TEMPLATE).css({
             //         width: "0px",
             //         height: "0px",
             //         left: touch.pageX + "px",
@@ -149,6 +149,7 @@
                var newtemp = '<div class="box" style="width: 0px; height: 0px; left:' + touch.pageX + 'px; top: ' + touch.pageY + 'px">' +
                '</div>';6 // JD: What is this number 6 doing here?  Sloppy.
                var newbox = newtemp;
+               // JD: Ack---you hardcoded #drawing-area!
                $("#drawing-area").append(newbox);
                (touch.target.creatingbox) = $("div div:last-child");
                (touch.target.creatingbox).addClass("create-highlight");
