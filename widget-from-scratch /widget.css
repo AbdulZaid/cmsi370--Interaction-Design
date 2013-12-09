@@ -1,3 +1,11 @@
+/* JD: The CSS here looks like a mix of what should be repeatable (i.e.,
+       reusable plugin CSS) and what is specific to this page (i.e.,
+       CSS that does not directly affect the plugin).  Proper separation
+       of concerns dictates that those should be in separate files.
+       
+       Think of it this way: if you where to integrate this drag-and-drop
+       chat element into RPG, what CSS would still apply?  What CSS would
+       change?  This determines what goes in which file. */
 #header {
     width: 100%;
     height: 30%;

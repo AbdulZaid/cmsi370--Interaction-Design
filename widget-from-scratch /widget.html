@@ -23,8 +23,25 @@
             <textarea id = "textbox" placeholder = "enter a text you would like to send"></textarea>
             <button id = "send">Send</button>
             <br>
+            <!-- JD: Depending on the design and intent of your jQuery plugin,
+                     having the developer spell out these elements may or may
+                     not be a good choice.  I know you have not "wrapped" your
+                     code into a plugin yet, but that is part of the issue:
+                     design decisions like this really should be made by you
+                     first, before diving into the code. -->
             <input checked type = "checkbox" id = "enter"/>
+            <!-- JD: You misspelled "label" in the line below. -->
             <lebel> Send when "enter" is clicked</label>
+            <!-- JD: The hardcoded positioning here is a sign that this
+                     is probably best left to the plugin code, so that the
+                     layout/positioning can be automated and not be prone
+                     to user error.  Then again, you might choose the user to
+                     control exactly where the draggable elements should go,
+                     in which case the code below may be acceptable.  The whole
+                     issue is that your intent is not known; there is neither
+                     documentation about it, nor do your design choices send a
+                     clear signal on what code will be the plugin's responsibility
+                     and what code will be the developer's. -->
             <div class="boxed" style="left: 569px; top: -20px;">LOL</div>
             <div class="boxed" style="left: 482px; top: -42px;">BRB</div>
             <div class="boxed" style="left: 526px; top: -64px;">TYT</div>
