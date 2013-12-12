@@ -30,6 +30,7 @@ var characterRowTemplate =
 
 
 $.getJSON(
+          //adding the list of characters ( the first method implemented from LMU Diabolical)."
           "http://lmu-diabolical.appspot.com/characters",
           function (characters) {
           // Do something with the character list.
@@ -48,9 +49,9 @@ $.getJSON(
                  $characterRow.find("#Money > em")
                  .text(character.money);
                  $("#character-table").append($characterRow);
-                 
                  });
-          //deletion function.
+          
+          //deletion function.( the second method implemented from LMU Diabolical)."
           $("#confirmDelete").click(function () {
                 var idOfCurrent = $("#current").text();
                 console.log("current ID " + idOfCurrent);
@@ -64,6 +65,37 @@ $.getJSON(
                 });
                 //dismissing the modal
                 $('#deleteModal').modal('hide');
+                });
+          
+          
+          //Creation function.( the Third method implemented from LMU Diabolical)."
+          $("#createAChar").click(function () {
+              
+              //dismissing the modal
+              $('#deleteModal').modal('hide');
+                                  
+              var characterAttr = {
+                      name: $("#create-name").val(),
+                      classType: $("#create-class").val(),
+                      gender: $("#create-gender").val(),
+                      level: $("#create-level").val(),
+                      money: $("#create-money").val()
+                      };
+                      
+              $.ajax({
+                     type: 'POST',
+                     url: "http://lmu-diabolical.appspot.com/characters",
+                     data: JSON.stringify(characterAttr),
+                     contentType: "application/json",
+                     dataType: "json",
+                     accept: "application/json",
+                     complete: function (jqXHR, textStatus) {
+                     // The new character can be accessed from the Location header.
+                     console.log("You may access the new character at:" +
+                                 jqXHR.getResponseHeader("Location"));
+                     }
+                     });
+
                 });
           }
 );

@@ -67,36 +67,27 @@
               <h4 class="modal-title">Create a new character</h4>
             </div>
             <div class="modal-body">
-                  <p>Please select the desired family to create a new member.</p>
                 <div class="modal-body">
-                  <select class="form-control">
-                    <option>Stark</option>
-                    <option>Lannister</option>
-                    <option>Bratheon</option>
-                    <option>Greyjoy</option>
-                    <option>Targaryan</option>
-                  </select>
                   <p></p>
-                  <p>Please fill in the information.</p>
-                    <div class="input-group input-group-sm">
+                  <p>Please fill in the information to create a new character.</p>
+                    <div  class="input-group input-group-sm">
                       <span class="input-group-addon">Name</span>
-                      <input type="text" class="form-control input-lg" placeholder="Name of the character">
+                      <input id = "create-name" type="text" class="form-control input-lg" placeholder="Name of the character">
                     </div>	
-                    <div class="input-group input-group-sm">
+                    <div  class="input-group input-group-sm">
                       <span class="input-group-addon">Class</span>
-                      <input type="text" class="form-control input-lg" placeholder="Class of char">
+                      <input id = "create-class" type="text" class="form-control input-lg" placeholder="Class of char">
                     </div>	
                     <div class="input-group input-group-sm">
-
                       <span class="input-group-addon">Gender</span>
-                        <select class="form-control">
+                        <select id = "create-gender" class="form-control">
                             <option>MALE</option>
                             <option>FEMALE</option>
                         </select>
                     </div>
-                    <div class="input-group input-group-sm">
+                    <div  class="input-group input-group-sm">
                       <span class="input-group-addon">Level</span>
-                        <select class="form-control">
+                        <select id = "create-level"class="form-control">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -109,15 +100,15 @@
                             <option>10</option>
                         </select>
                     </div>
-                    <div class="input-group input-group-sm">
+                    <div  class="input-group input-group-sm">
                       <span class="input-group-addon">Money</span>
-                      <input type="text" class="form-control" placeholder="Money">
+                      <input id = "create-money" type="text" class="form-control" placeholder="Money">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-success" data-dismiss="modal">Add Character</button>
+              <button id = "createAChar" type="button" class="btn btn-success" data-dismiss="modal">Add Character</button>
               <a id="help-button-CharAdding" href="help.html" class="btn btn-info btn-sm" >
               Help!</a>
             </div>
@@ -141,20 +132,38 @@
                  <button id="randomSpawn" type="button" class="btn btn-success btn-sm">Spawn an item</button>
                  <p>Please fill in the information.</p>
                         <div class="input-group input-group-sm">
-                          <span class="input-group-addon">Name of the member</span>
-                          <input type="text" class="form-control input-lg" placeholder="Name of the character">
-                        </div>	
-                        <div class="input-group input-group-sm">
-                          <span class="input-group-addon">The Skills, or abilities</span>
-                          <input type="text" class="form-control input-lg" placeholder="Seprate skills by comma">
-                        </div>	
-                        <div class="input-group input-group-sm">
-                          <span class="input-group-addon">Source of Power (items)</span>
-                          <input type="text" class="form-control" placeholder="Seprate info by comma">
+                            <span class="input-group-addon">Name</span>
+                            <input type="text" class="form-control input-lg" placeholder="Name of the character">
                         </div>
                         <div class="input-group input-group-sm">
-                          <span class="input-group-addon">The Overall Strength</span>
-                          <input type="text" class="form-control" placeholder="Strength out of 10">
+                            <span class="input-group-addon">Class</span>
+                            <input type="text" class="form-control input-lg" placeholder="Class of char">
+                        </div>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Gender</span>
+                            <select class="form-control">
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                            </select>
+                        </div>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Level</span>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Money</span>
+                            <input type="text" class="form-control" placeholder="Money">
                         </div>
             </div>
             <div class="modal-footer">
