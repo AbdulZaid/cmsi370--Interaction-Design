@@ -12,7 +12,7 @@ var characterRowTemplate =
         '<div class="col-sm-6 col-md-3">' +
         '<div class="thumbnail">' +
         '<img data-src="holder.js/300x200" alt="Character">' +
-        '<div class="caption">' +
+        '<div  id = "" class="caption">' +
         '<h3 id = "idOfCharToChange"></h3>' +
         '<p id = "idOfChar" ><strong>ID: </strong><em id = "current"></em></p>' +
         '<p id = "classOfChar" ><strong>Class: </strong><em></em></p>' +
@@ -30,6 +30,7 @@ var characterRowTemplate =
 
 
 $.getJSON(
+
           //adding the list of characters ( the first method implemented from LMU Diabolical)."
           "http://lmu-diabolical.appspot.com/characters",
           function (characters) {
@@ -40,6 +41,8 @@ $.getJSON(
                  .text(character.name);
                  $characterRow.find("#current")
                  .text(character.id);
+                 $characterRow.find(".caption")
+                  .attr("id", character.id);
                  $characterRow.find("#classOfChar > em")
                  .text(character.classType);
                  $characterRow.find("#Gender > em")
@@ -50,28 +53,12 @@ $.getJSON(
                  .text(character.money);
                  $("#character-table").append($characterRow);
                  });
-          
-          //deletion function.( the second method implemented from LMU Diabolical)."
-          $("#confirmDelete").click(function () {
-                var idOfCurrent = $("#current").text();
-                console.log("current ID " + idOfCurrent);
-                $.ajax({
-                       type: 'DELETE',
-                       url: "http://lmu-diabolical.appspot.com/characters/"+ idOfCurrent,
-                       success: function (data, textStatus, jqXHR) {
-                       console.log("Gone baby gone.");
-                       }
-                });
-                //dismissing the modal
-                $('#deleteModal').modal('hide');
-                });
-          
-          
+
           //Creation function.( the Third method implemented from LMU Diabolical)."
           $("#createAChar").click(function () {
               
               //dismissing the modal
-              $('#deleteModal').modal('hide');
+              $('#createModal').modal('hide');
                                   
               var characterAttr = {
                       name: $("#create-name").val(),
@@ -94,26 +81,40 @@ $.getJSON(
                                  jqXHR.getResponseHeader("Location"));
                      }
                      });
-
                 });
-          }
-);
-
-$(function () {
-//Edition function.( the Third method implemented from LMU Diabolical)."
-$("#save-changes").click(function () {
-                               
+          
+          
+          //deletion function.( the second method implemented from LMU Diabolical)."
+          $("#confirmDelete").click(function () {
+                var idOfCurrent = $(".caption").attr("id");
+                console.log("current ID " + idOfCurrent);
+                $.ajax({
+                       type: 'DELETE',
+                       url: "http://lmu-diabolical.appspot.com/characters/"+ idOfCurrent,
+                       success: function (data, textStatus, jqXHR) {
+                       console.log("Gone baby gone.");
+                       }
+                       });
+                //dismissing the modal
+                $('#deleteModal').modal('hide');
+                });
+          
+          
+          //Edition function.( the Third method implemented from LMU Diabolical)."
+          $("#save-changes").click(function () {
+               
                //dismissing the modal
                $('#editModal').modal('hide');
                
                var characterEditAttr = {
-                     id: $("#current").text(), // try to get the delete button.
-                     name: $("#edit-name").val(),
-                     classType: $("#edit-class").val(),
-                     gender: $("#edit-gender").val(),
-                     level: $("#edit-level").val(),
-                     money: $("#edit-money").val()
+                       id: $(".caption").attr("id"), // try to get the delete button.
+                       name: $("#edit-name").val(),
+                       classType: $("#edit-class").val(),
+                       gender: $("#edit-gender").val(),
+                       level: $("#edit-level").val(),
+                       money: $("#edit-money").val()
                };
+                                   
                $.ajax({
                       type: 'PUT',
                       url: "http://lmu-diabolical.appspot.com/characters/"+ characterEditAttr.id,
@@ -126,5 +127,8 @@ $("#save-changes").click(function () {
                       }
                       });
                });
-});
+          }
+);
+
+
 
