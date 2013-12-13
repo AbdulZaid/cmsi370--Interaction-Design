@@ -6,6 +6,11 @@ Warren Christina.
 \newblock \url { http://mashable.com/2013/05/02/second-screen/} (last accessed
   on 05/11/2013).
 
+\bibitem[Ent11]{Dell}
+Ziff~Davis Enterprise.
+\newblock Dual monitors boost productivity, user satisfaction.
+\newblock {\em Dell Journal}, 2011.
+
 \bibitem[GRG12]{Second-Screen-Art}
 headed by Ritayan~Banerjee GCP Research~Group.
 \newblock Second screen revolutionizing the television experience.
@@ -23,21 +28,34 @@ Cory Janssen.
 \newblock \url { http://www.techopedia.com/definition/29212/second-screen}
   (last accessed on 04/11/2013).
 
+\bibitem[Roy13]{BenifitsAndImpacts}
+Charles~Stéphane Roy.
+\newblock The second screen and television, benefits and impacts.
+\newblock {\em White Paper Series No 2}, (No 2), March 2013.
+
 \bibitem[SM86]{Guideline}
 Sidney~L. Smith and Jane~N. Mosier.
 \newblock Guidelines for designing user interface software, 1986.
 \newblock \url { http://hcibib.org/sam/2.html} (last accessed on 05/11/2013).
 
-\bibitem[Wik13a]{defOfSocialTV}
-Wikipedia.
-\newblock Data consistency, 2013.
-\newblock \url { http://en.wikipedia.org/wiki/Social_television} (last accessed
-  on 13/12/2013).
+\bibitem[Sne09]{AdvDisv}
+Steven Snell.
+\newblock Advantages and disadvantages of working with multiple screens, May
+  2009.
+\newblock \url
+  {http://www.webdesignerdepot.com/2009/05/advantages-and-disadvantages-of-working-with-multiple-screens/}
+  (last accessed on 13/12/2013).
 
-\bibitem[Wik13b]{guidline2}
+\bibitem[Wik13a]{guidline2}
 Wikipedia.
 \newblock Data consistency, 2013.
 \newblock \url { http://en.wikipedia.org/wiki/Data_consistency} (last accessed
   on 05/11/2013).
+
+\bibitem[Wik13b]{defOfSocialTV}
+Wikipedia.
+\newblock Social television, 2013.
+\newblock \url { http://en.wikipedia.org/wiki/Social_television} (last accessed
+  on 13/12/2013).
 
 \end{thebibliography}
