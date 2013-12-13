@@ -59,7 +59,6 @@ $.getJSON(
                        type: 'DELETE',
                        url: "http://lmu-diabolical.appspot.com/characters/"+ idOfCurrent,
                        success: function (data, textStatus, jqXHR) {
-                       $("#" + idOfCurrent).remove();
                        console.log("Gone baby gone.");
                        }
                 });
@@ -99,3 +98,33 @@ $.getJSON(
                 });
           }
 );
+
+$(function () {
+//Edition function.( the Third method implemented from LMU Diabolical)."
+$("#save-changes").click(function () {
+                               
+               //dismissing the modal
+               $('#editModal').modal('hide');
+               
+               var characterEditAttr = {
+                     id: $("#current").text(), // try to get the delete button.
+                     name: $("#edit-name").val(),
+                     classType: $("#edit-class").val(),
+                     gender: $("#edit-gender").val(),
+                     level: $("#edit-level").val(),
+                     money: $("#edit-money").val()
+               };
+               $.ajax({
+                      type: 'PUT',
+                      url: "http://lmu-diabolical.appspot.com/characters/"+ characterEditAttr.id,
+                      data: JSON.stringify(characterEditAttr),
+                      contentType: "application/json",
+                      dataType: "json",
+                      accept: "application/json",
+                      success: function (data, textStatus, jqXHR) {
+                      console.log("Done: no news is good news.");
+                      }
+                      });
+               });
+});
+
