@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 DEC 2013 07:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 DEC 2013 08:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -182,7 +182,14 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(./Mental-Model-Paper.aux)
+(./Mental-Model-Paper.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `Mental-Model-Paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -198,8 +205,7 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Try loading font information for U+msa on input line 15.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 15.
@@ -306,18 +312,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Underfull \vbox (badness 1158) has occurred while \output is active []
+</Users/AbdulZaid/Downloads/Chris_Bennitt.jpg, id=20, 728.7225pt x 485.815pt>
+File: /Users/AbdulZaid/Downloads/Chris_Bennitt.jpg Graphic file (type jpg)
 
- [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use /Users/AbdulZaid/Downloads/Chris_Bennitt.jpg>
+Package pdftex.def Info: /Users/AbdulZaid/Downloads/Chris_Bennitt.jpg used on i
+nput line 43.
+(pdftex.def)             Requested size: 241.84842pt x 161.23123pt.
 
- [6]
-Underfull \vbox (badness 1158) has occurred while \output is active []
+</Users/AbdulZaid/Downloads/BrightCove.jpg, id=21, 633.36626pt x 301.125pt>
+File: /Users/AbdulZaid/Downloads/BrightCove.jpg Graphic file (type jpg)
+
+<use /Users/AbdulZaid/Downloads/BrightCove.jpg>
+Package pdftex.def Info: /Users/AbdulZaid/Downloads/BrightCove.jpg used on inpu
+t line 51.
+(pdftex.def)             Requested size: 241.84842pt x 114.98006pt.
+
+</Users/AbdulZaid/Downloads/Ankur.jpg, id=22, 451.6875pt x 313.17pt>
+File: /Users/AbdulZaid/Downloads/Ankur.jpg Graphic file (type jpg)
+
+<use /Users/AbdulZaid/Downloads/Ankur.jpg>
+Package pdftex.def Info: /Users/AbdulZaid/Downloads/Ankur.jpg used on input lin
+e 59.
+(pdftex.def)             Requested size: 241.84842pt x 167.68526pt.
+ [5 </Users/AbdulZaid/Downloads/Chris_Bennitt.jpg> </Users/AbdulZaid/Downloads/
+BrightCove.jpg>] [6 </Users/AbdulZaid/Downloads/Ankur.jpg>]
+Underfull \vbox (badness 1796) has occurred while \output is active []
 
  [7]
-Underfull \vbox (badness 3536) has occurred while \output is active []
-
- [8]
+[8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
@@ -330,7 +353,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-(./Mental-Model-Paper.bbl [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+(./Mental-Model-Paper.bbl
+Underfull \vbox (badness 7344) has occurred while \output is active []
+
+ [14]
 Missing character: There is no é in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--48
@@ -362,28 +391,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--60
  : / / en . wikipedia . org / wiki / Social _
  []
 
-) [14] (./Mental-Model-Paper.aux) ) 
+) [15] (./Mental-Model-Paper.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3427 strings out of 493315
- 45194 string characters out of 6137904
- 112058 words of memory out of 5000000
- 6675 multiletter control sequences out of 15000+600000
+ 3446 strings out of 493315
+ 45822 string characters out of 6137904
+ 112105 words of memory out of 5000000
+ 6689 multiletter control sequences out of 15000+600000
  7405 words of font info for 29 fonts, out of 8000000 for 9000
  1118 hyphenation exceptions out of 8191
- 37i,6n,32p,1426b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on Mental-Model-Paper.pdf (14 pages, 144533 bytes).
+ 37i,6n,32p,1426b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Mental-Model-Paper.pdf (15 pages, 934186 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
