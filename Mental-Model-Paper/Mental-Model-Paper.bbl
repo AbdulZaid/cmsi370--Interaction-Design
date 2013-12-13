@@ -1,4 +1,4 @@
-\begin{thebibliography}{GRG12}
+\begin{thebibliography}{Wik13b}
 
 \bibitem[Chr13]{Second-Screen-His}
 Warren Christina.
@@ -28,7 +28,13 @@ Sidney~L. Smith and Jane~N. Mosier.
 \newblock Guidelines for designing user interface software, 1986.
 \newblock \url { http://hcibib.org/sam/2.html} (last accessed on 05/11/2013).
 
-\bibitem[Wik13]{guidline2}
+\bibitem[Wik13a]{defOfSocialTV}
+Wikipedia.
+\newblock Data consistency, 2013.
+\newblock \url { http://en.wikipedia.org/wiki/Social_television} (last accessed
+  on 13/12/2013).
+
+\bibitem[Wik13b]{guidline2}
 Wikipedia.
 \newblock Data consistency, 2013.
 \newblock \url { http://en.wikipedia.org/wiki/Data_consistency} (last accessed
