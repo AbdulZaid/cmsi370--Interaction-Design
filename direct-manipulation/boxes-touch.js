@@ -1,4 +1,4 @@
-var BoxesTouch = { // JD: Why did this and the comment below it get indented?
+var BoxesTouch = {
     /**
      * Sets up the given jQuery collection as the drawing area(s).
      */
@@ -14,14 +14,13 @@ setDrawingArea: function (jQueryElements) {
       element.addEventListener("touchend", BoxesTouch.endDrag, false);
       element.addEventListener("touchstart", BoxesTouch.startCreate, false);
     })
-    // JD: This too---this was already formatted just fine.  Why the change?
+
 .find("div.box").each(function (index, element) {
       element.addEventListener("touchstart", BoxesTouch.startMove, false);
       element.addEventListener("touchend", BoxesTouch.unhighlight, false);
     });
 },
     
-    // JD: Another unexplained indent shift.
     /**
      * Tracks a box as it is rubberbanded or moved across the drawing area.
      */
@@ -54,15 +53,7 @@ trackDrag: function (event) {
            }
            
            //Create Box
-           // JD: Watch your naming!!!  Look REALLY CAREFULLY at the line below,
-           //     and compare it to the rest of the code that refers to the box
-           //     being created.
            if (touch.target.creatingbox) {
-           // JD: Next, recall that the touch target here is the *drawing area*, not
-           //     the individual boxes.  Thus, you need a different scheme for tracking
-           //     the box that is being created because there can be more than one
-           //     such box.  Hint: All touch objects have a guaranteed-unique and
-           //     stable identifier.
                if(touch.pageX < touch.target.initialX) {
                        touch.target.creatingbox.offset({
                             left: touch.pageX,
@@ -105,30 +96,8 @@ startCreate: function (event) {
            touch.target.initialY = touch.pageY;
            
            //Create new box
-           // JD: Alternatively, you can define this "template" as a standalone
-           //     string at the top, then set its attributes via jQuery, e.g.:
-           //
-           //     ...
-           //     TEMP_BOX_TEMPLATE: '<div class="box"></div>';
-           //
-           //     ...
-           //
-           //     var newtemp = $(BoxesTouch.TEMP_BOX_TEMPLATE).css({
-           //         width: "0px",
-           //         height: "0px",
-           //         left: touch.pageX + "px",
-           //         top: touch.pageY + "px"
-           //     });
-           //
-           //     ...
-           //
-           //     You may find this approach to be a little more readable and
-           //     less error-prone.
-           //
-           var newtemp = '<div class="box" style="width: 0px; height: 0px; left:' + touch.pageX + 'px; top: ' + touch.pageY + 'px">' +
-           '</div>'; // JD: What is this number 6 doing here?  Sloppy.
+           var newtemp = '<div class="box" style="width: 0px; height: 0px; left:' + touch.pageX + 'px; top: ' + touch.pageY + 'px">' + '</div>'; 
            var newbox = newtemp;
-           // JD: Ack---you hardcoded #drawing-area!
            $("#drawing-area").append(newbox);
            (touch.target.creatingbox) = $("div div:last-child");
            (touch.target.creatingbox).addClass("create-highlight");
