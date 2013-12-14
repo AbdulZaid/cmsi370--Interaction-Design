@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dream-design.aux
+The style file: alpha.bst
+Database file #1: dream-design.bib
+You've used 3 entries,
+            2543 wiz_defined-function locations,
+            571 strings with 4683 characters,
+and the built_in function-call counts, 800 in all, are:
+= -- 69
+> -- 24
+< -- 3
++ -- 6
+- -- 6
+* -- 41
+:= -- 129
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 15
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 33
+empty$ -- 76
+format.name$ -- 12
+if$ -- 164
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 15
+num.names$ -- 9
+pop$ -- 30
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 37
+stack$ -- 0
+substring$ -- 21
+swap$ -- 3
+text.length$ -- 3
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 6
+width$ -- 4
+write$ -- 32
