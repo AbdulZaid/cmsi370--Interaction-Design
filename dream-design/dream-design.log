@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 DEC 2013 02:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 DEC 2013 02:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -185,6 +185,9 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 LaTeX Warning: Label `overflow' multiply defined.
 
+
+LaTeX Warning: Label `overflow' multiply defined.
+
 )
 \openout1 = `dream-design.aux'.
 
@@ -341,28 +344,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-[11] (./dream-design.aux)
+<../../../Downloads/VIUscan_handheld_3D_scanner_in_use.jpg, id=41, 2826.56pt x 
+1879.02pt>
+File: ../../../Downloads/VIUscan_handheld_3D_scanner_in_use.jpg Graphic file (t
+ype jpg)
+ <use ../../../Downloads/VIUscan_handheld_3D_scanner_in_use.jpg>
+Package pdftex.def Info: ../../../Downloads/VIUscan_handheld_3D_scanner_in_use.
+jpg used on input line 97.
+(pdftex.def)             Requested size: 426.79134pt x 283.70448pt.
+
+[11] [12 <../../../Downloads/VIUscan_handheld_3D_scanner_in_use.jpg>]
+(./dream-design.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3401 strings out of 493315
- 44999 string characters out of 6137904
- 113302 words of memory out of 5000000
- 6654 multiletter control sequences out of 15000+600000
+ 3406 strings out of 493315
+ 45284 string characters out of 6137904
+ 113303 words of memory out of 5000000
+ 6658 multiletter control sequences out of 15000+600000
  6544 words of font info for 26 fonts, out of 8000000 for 9000
  1118 hyphenation exceptions out of 8191
- 37i,6n,31p,1585b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,31p,1585b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on dream-design.pdf (11 pages, 714291 bytes).
+Output written on dream-design.pdf (12 pages, 2787510 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
