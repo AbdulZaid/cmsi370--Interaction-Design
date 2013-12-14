@@ -9,31 +9,23 @@ function username() {
 }
 
 $(function() {
-    // JD: As I've mentioned to you in an email, this code is not yet in the
-    //     form of a plugin, and it should be.  The process of doing this involves
-    //     putting some thought into what your plugin's API should be, then building
-    //     your code around that API.  What is the intended scope of the plugin?
-    //     The entire chatbox?  Or just the drag-and-drop text field?
-    //
-    //     These are the kinds of questions you'll need to answer before wrapping
-    //     your code up within a jQuery plugin.
-
+  
   username();
   //Send on "enter" click.
     // JD: Note how your code is bound to IDs (# selectors), thus severely using
     //     the reusability of your work.  Consider switching to repeatable values
     //     like classes.
-  $("#textbox").keypress(function(event) { // JD: Space after "function" please.
+  $(".textbox").keypress( function(event) {
     if(event.which == 13) { //when enter is hit.
         // JD: Your indentation scheme is showing inconsistency here.  You started
         //     out indenting two spaces at a time, but now you went for 5 spaces.
         //     Choose an indent width and stick with it.
          if($("#enter").prop("checked")) { //see if box is checked.
              var userName = "<span class = 'username' = >You: </span>";
-             var textValue = $("#textbox").val();
+             var textValue = $(".textbox").val();
              var currentText = $("#container").html();
              $("#container").html(currentText + "<br>" + userName + textValue);
-             $("#textbox").val(" ");//clear out the text field.
+             $(".textbox").val(" ");//clear out the text field.
              event.preventDefault(); // to prevent jumping a space when hitting enter.
              $("#container").scrollTop($("#container").prop("scrollHeight")); //to go directliy to the bottom when you send a new message.
 
@@ -57,10 +49,10 @@ $(function() {
   $("#send").click(function(){
         var userName = "<span class = 'username' = >You: </span>";
         username(); // JD: I rest my case.
-        var textValue = $("#textbox").val();
+        var textValue = $(".textbox").val();
         var currentText = $("#container").html();
         $("#container").html(currentText + "<br>" + userName +textValue);
-        $("#textbox").val(" ");
+        $(".textbox").val(" ");
         $("#container").scrollTop($("#container").prop("scrollHeight"));
         }); // JD: Bad indent here.
   
@@ -78,7 +70,7 @@ $(function() {
     //     sent you on December 3, there is a crucial bug in your drop handler
     //     that wipes out the droppable functionality in the text box.
         $(".boxed").draggable({helper: "clone"});
-        $("#textbox").droppable({
+        $(".textbox").droppable({
             accept:".boxed",
             drop: function(ev, ui) { // JD: Space after "function" again.
                 // JD: This should be indented by an additional level (see where
