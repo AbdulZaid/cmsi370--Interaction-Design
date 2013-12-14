@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 DEC 2013 23:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 DEC 2013 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -171,7 +171,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(./dream-design.aux)
+(./dream-design.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `dream-design.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -187,8 +191,7 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Try loading font information for U+msa on input line 16.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 16.
@@ -293,31 +296,54 @@ File: ../../../Downloads/photo41.jpg Graphic file (type jpg)
 
 <use ../../../Downloads/photo41.jpg>
 Package pdftex.def Info: ../../../Downloads/photo41.jpg used on input line 38.
-(pdftex.def)             Requested size: 256.0748pt x 149.25536pt.
- [2] [3 <../../../Downloads/photo41.jpg>]
-[4] [5]
+(pdftex.def)             Requested size: 426.79134pt x 248.7631pt.
+ [2]
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+ [3 <../../../Downloads/photo41.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-[7] [8] (./dream-design.aux) ) 
+ [4]
+<../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg, id=21, 2320.67pt x 1790
+.69pt>
+File: ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg Graphic file (type 
+jpg)
+ <use ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg>
+Package pdftex.def Info: ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg 
+used on input line 66.
+(pdftex.def)             Requested size: 426.79134pt x 329.30516pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 4193) has occurred while \output is active []
+
+ [6 <../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg>] [7]
+Underfull \vbox (badness 2913) has occurred while \output is active []
+
+ [8]
+[9] [10] (./dream-design.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3335 strings out of 493315
- 43924 string characters out of 6137904
- 109845 words of memory out of 5000000
- 6593 multiletter control sequences out of 15000+600000
+ 3340 strings out of 493315
+ 44189 string characters out of 6137904
+ 110884 words of memory out of 5000000
+ 6597 multiletter control sequences out of 15000+600000
  6544 words of font info for 26 fonts, out of 8000000 for 9000
  1118 hyphenation exceptions out of 8191
- 37i,5n,31p,1355b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr9.pfb>
-Output written on dream-design.pdf (8 pages, 251909 bytes).
+ 37i,6n,31p,1355b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on dream-design.pdf (10 pages, 710733 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
