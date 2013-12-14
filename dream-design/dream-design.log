@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 DEC 2013 01:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 DEC 2013 01:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,7 +305,7 @@ e
 File: ../../../Downloads/photo41.jpg Graphic file (type jpg)
 
 <use ../../../Downloads/photo41.jpg>
-Package pdftex.def Info: ../../../Downloads/photo41.jpg used on input line 40.
+Package pdftex.def Info: ../../../Downloads/photo41.jpg used on input line 36.
 (pdftex.def)             Requested size: 426.79134pt x 248.7631pt.
  [2]
 Underfull \vbox (badness 1052) has occurred while \output is active []
@@ -320,7 +320,7 @@ File: ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg Graphic file (type
 jpg)
  <use ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg>
 Package pdftex.def Info: ../../../Downloads/0_ShopSavvyHiResScanningAvatar.jpg 
-used on input line 68.
+used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 329.30516pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -335,7 +335,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2913) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 2913) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10] [11] (./dream-design.aux)
@@ -356,7 +356,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on dream-design.pdf (11 pages, 713065 bytes).
+Output written on dream-design.pdf (11 pages, 713748 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
