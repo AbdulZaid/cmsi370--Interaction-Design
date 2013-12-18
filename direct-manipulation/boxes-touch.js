@@ -2,6 +2,9 @@ var BoxesTouch = {
     /**
      * Sets up the given jQuery collection as the drawing area(s).
      */
+    // JD2: Now your indents have gone too far to the left.  Note how
+    //      everything below remains "inside" the BoxesTouch object.
+    //      Thus, they should be indented one level.
 setDrawingArea: function (jQueryElements) {
     // Set up any pre-existing box elements for touch behavior.
     jQueryElements
@@ -9,6 +12,9 @@ setDrawingArea: function (jQueryElements) {
     
     // Event handler setup must be low-level because jQuery
     // doesn't relay touch-specific event properties.
+    // JD2: You still aren't showing that you are clear on how indentation
+    //      reflects structure.  This each function is the follow-up call
+    //      after addClass is performed.  Thus, those two should line up.
 .each(function (index, element) {
       element.addEventListener("touchmove", BoxesTouch.trackDrag, false);
       element.addEventListener("touchend", BoxesTouch.endDrag, false);
@@ -41,7 +47,7 @@ trackDrag: function (event) {
                    touch.pageX - touch.target.deltaX < 0 ||
                    touch.pageY - touch.target.deltaY < 0)) {
                         (touch.target.movingBox).addClass("delete-box delete-highlight");
-                        }
+                        } // JD2: This concludes the if, so should line up with it.
                
                if(((touch.target.movingBox).hasClass("delete-box")) &&
                   (touch.pageX - touch.target.deltaX < 512 &&
@@ -53,6 +59,12 @@ trackDrag: function (event) {
            }
            
            //Create Box
+           // JD2: Note how multiple creations still don't work.  The issue
+           //      lies here: you are storing the box being created under
+           //      touch.target.  "target" is the element on which the event
+           //      took place.  So, answer these questions: (1) Which element
+           //      exactly is touch.target? and (2) How many of them are there;
+           //      to they correspond to the number of active touches on the page?
            if (touch.target.creatingbox) {
                if(touch.pageX < touch.target.initialX) {
                        touch.target.creatingbox.offset({
