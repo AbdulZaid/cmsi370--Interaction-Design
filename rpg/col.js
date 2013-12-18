@@ -66,7 +66,7 @@ $.getJSON(
                       gender: $("#create-gender").val(),
                       level: $("#create-level").val(),
                       money: $("#create-money").val()
-                      };
+                      }; // JD2: This should be aligned with "characterAttr."
                       
               $.ajax({
                      type: 'POST',
@@ -92,6 +92,11 @@ $.getJSON(
                        type: 'DELETE',
                        url: "http://lmu-diabolical.appspot.com/characters/"+ idOfCurrent,
                        success: function (data, textStatus, jqXHR) {
+                           // JD2: Relative to the above line, you should indent here.
+                           //
+                           //      Also, the console.log is not enough; you need to
+                           //      update the user interface to show that the character
+                           //      has been deleted.
                        console.log("Gone baby gone.");
                        }
                        });
@@ -123,6 +128,10 @@ $.getJSON(
                       dataType: "json",
                       accept: "application/json",
                       success: function (data, textStatus, jqXHR) {
+                          // JD2: Relative to the above line, you should indent here.
+                          //
+                          //      And yes, no news is good news in terms of the Ajax call,
+                          //      but no news is *bad* news in terms of the user interface!
                       console.log("Done: no news is good news.");
                       }
                       });
